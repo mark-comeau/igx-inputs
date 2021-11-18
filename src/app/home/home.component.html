@@ -1,0 +1,81 @@
+<div class="content">
+    <div>
+      <h4>Line Type- Multiline</h4>
+      <br />
+      <igx-input-group type="line" theme="material" [displayDensity]="'compact'">
+        <textarea igxInput name="note" required rows=3 readonly="true"></textarea>
+        <label igxLabel for="note">Note</label>
+        <igx-suffix>
+          <igx-icon>edit</igx-icon>
+        </igx-suffix>
+      </igx-input-group>
+      <br />
+      <igx-input-group type="line" theme="material" [displayDensity]="'compact'">
+        <textarea igxInput name="note" required rows=3
+          readonly="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+        <label igxLabel for="note">Note</label>
+        <igx-suffix>
+          <igx-icon [igxTooltipTarget]="tooltipRef">more</igx-icon>
+          <igx-icon>edit</igx-icon>
+        </igx-suffix>
+      </igx-input-group>
+    </div>
+    <igx-divider [vertical]="true"></igx-divider>
+    <div>
+      <h4>Box Type- Multiline</h4>
+      <br />
+      <igx-input-group type="box" theme="material" [displayDensity]="'compact'">
+        <textarea igxInput name="note" required rows=3 readonly="true"></textarea>
+        <label igxLabel for="note">Note</label>
+        <igx-suffix>
+          <igx-icon>edit</igx-icon>
+        </igx-suffix>
+      </igx-input-group>
+      <br />
+      <igx-input-group type="box" theme="material" [displayDensity]="'compact'">
+        <textarea igxInput name="note" required rows=3 readonly="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+        <label igxLabel for="note">Note</label>
+        <igx-suffix>
+          <igx-icon [igxTooltipTarget]="tooltipRef">more</igx-icon>
+          <igx-icon>edit</igx-icon>
+        </igx-suffix>
+      </igx-input-group>
+    </div>
+    <igx-divider [vertical]="true"></igx-divider>
+    <div>
+      <h4>Border Type - Multiline</h4>
+      <br /> 
+      <igx-input-group type="border" theme="material" [displayDensity]="'compact'">
+        <textarea igxInput name="note" required rows=3 readonly="true"></textarea>
+        <label igxLabel for="note">Note</label>
+        <igx-suffix>
+          <igx-icon>edit</igx-icon>
+        </igx-suffix>
+      </igx-input-group>
+      <br />
+      <igx-input-group type="border" theme="material" [displayDensity]="'compact'">
+        <textarea igxInput name="note" required rows=3 readonly="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+        <label igxLabel for="note">Note</label>
+        <igx-suffix>
+          <igx-icon [igxTooltipTarget]="tooltipRef">more</igx-icon>
+          <igx-icon>edit</igx-icon>
+        </igx-suffix>
+      </igx-input-group>
+    </div>
+</div>
+
+<div #tooltipRef="tooltip" igxTooltip>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+<div>aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</div>
+<div>aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint</div>
+<div>occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</div>

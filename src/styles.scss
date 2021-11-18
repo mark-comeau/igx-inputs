@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+// Standard CSS normalize, comment out if not required or using a different module
+@import "~minireset.css/minireset";
+
+/* See: https://www.infragistics.com/products/ignite-ui-angular/angular/components/themes/sass/index */
+@import "~@infragistics/igniteui-angular/lib/core/styles/themes/index";
+@import './_variables';
+
+.light-theme {
+    @include igx-light-theme($default-palette);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+@include igx-core();
+@include igx-typography();
+@include igx-theme(
+    $palette: $palette,
+    $schema: $schema,
+    $legacy-support: $legacy-support
+);
+
+:root {
+    @include igx-palette-vars($palette);
+}
+
+.light-theme {
+    @include igx-light-theme($palette);
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+.grid-row {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%
+}
